@@ -1,0 +1,42 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DEF2E4"/>
+      <stop offset="100%" stop-color="#BEE6CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#nbg)"/>
+  <circle cx="420" cy="60" r="90" fill="#ffffff" opacity="0.35"/>
+
+  <!-- two runners silhouette -->
+  <g transform="translate(120,110)">
+    <circle cx="40" cy="20" r="18" fill="#16231F"/>
+    <path d="M25 45 Q40 35 55 45 L60 130 Q40 140 20 130 Z" fill="#1E8E5A"/>
+    <path d="M22 125 Q0 170 10 210" stroke="#16231F" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M55 125 Q80 150 70 200" stroke="#16231F" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M28 50 Q0 65 -5 100" stroke="#16231F" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M52 50 Q80 60 82 95" stroke="#16231F" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+  <g transform="translate(230,90)">
+    <circle cx="40" cy="20" r="18" fill="#146842"/>
+    <path d="M25 45 Q40 35 55 45 L60 130 Q40 140 20 130 Z" fill="#E3A83B"/>
+    <path d="M22 125 Q0 175 12 215" stroke="#146842" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M55 125 Q84 155 74 205" stroke="#146842" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M28 50 Q2 62 -2 98" stroke="#146842" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M52 50 Q82 58 86 92" stroke="#146842" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- floating food icons -->
+  <g transform="translate(60,280)">
+    <circle r="26" fill="#ffffff"/>
+    <circle r="18" fill="#E3A83B"/>
+  </g>
+  <g transform="translate(140,320)">
+    <circle r="20" fill="#ffffff"/>
+    <path d="M-8 4 Q0 -14 8 4 Q0 12 -8 4Z" fill="#1E8E5A"/>
+  </g>
+  <g transform="translate(420,300)">
+    <circle r="22" fill="#ffffff"/>
+    <rect x="-10" y="-2" width="20" height="12" rx="4" fill="#146842"/>
+  </g>
+</svg>

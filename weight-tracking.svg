@@ -1,0 +1,63 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DEF2E4"/>
+      <stop offset="100%" stop-color="#F1EDE2"/>
+    </linearGradient>
+    <linearGradient id="scaleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16231F"/>
+      <stop offset="100%" stop-color="#2B3F38"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="400" fill="url(#wbg)"/>
+
+  <!-- grid background details -->
+  <g opacity="0.3" stroke="#BEE6CC" stroke-width="2">
+    <line x1="50" y1="0" x2="50" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+    <line x1="0" y1="300" x2="500" y2="300"/>
+  </g>
+
+  <!-- Line Chart in the background -->
+  <g opacity="0.8" transform="translate(40, 60)">
+    <!-- grid horizontal helper lines -->
+    <line x1="0" y1="50" x2="420" y2="50" stroke="#BEE6CC" stroke-dasharray="5 5" stroke-width="2"/>
+    <line x1="0" y1="100" x2="420" y2="100" stroke="#BEE6CC" stroke-dasharray="5 5" stroke-width="2"/>
+    <line x1="0" y1="150" x2="420" y2="150" stroke="#BEE6CC" stroke-dasharray="5 5" stroke-width="2"/>
+
+    <!-- Graph Path (downward weight trend) -->
+    <path d="M 30,60 L 110,75 L 190,50 L 270,110 L 350,135" fill="none" stroke="#1E8E5A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Data Points -->
+    <circle cx="30" cy="60" r="8" fill="#E3A83B"/>
+    <circle cx="110" cy="75" r="8" fill="#E3A83B"/>
+    <circle cx="190" cy="50" r="8" fill="#E3A83B"/>
+    <circle cx="270" cy="110" r="8" fill="#E3A83B"/>
+    <circle cx="350" cy="135" r="10" fill="#16231F"/>
+    
+    <!-- Glow around latest weight dot -->
+    <circle cx="350" cy="135" r="16" fill="none" stroke="#E3A83B" stroke-width="3" opacity="0.6"/>
+  </g>
+
+  <!-- Bathroom scale in the foreground -->
+  <g transform="translate(140, 180)">
+    <!-- Scale Shadow -->
+    <rect x="5" y="15" width="220" height="190" rx="30" fill="#16231F" opacity="0.12"/>
+    
+    <!-- Scale Base Plate -->
+    <rect width="220" height="190" rx="30" fill="url(#scaleGrad)"/>
+    
+    <!-- Metallic Grip Accents (Left/Right) -->
+    <rect x="15" y="40" width="30" height="110" rx="5" fill="#DEF2E4" opacity="0.15"/>
+    <rect x="175" y="40" width="30" height="110" rx="5" fill="#DEF2E4" opacity="0.15"/>
+
+    <!-- Display Screen Wrapper -->
+    <rect x="50" y="15" width="120" height="50" rx="10" fill="#16231F"/>
+    <!-- Digital Screen -->
+    <rect x="54" y="19" width="112" height="42" rx="6" fill="#1E8E5A"/>
+    
+    <!-- Digital Text readings -->
+    <text x="110" y="43" font-family="Courier New, monospace" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">72.5 kg</text>
+    <text x="110" y="55" font-family="Courier New, monospace" font-size="9" fill="#F1EDE2" text-anchor="middle">BMI 21.8</text>
+  </g>
+</svg>
